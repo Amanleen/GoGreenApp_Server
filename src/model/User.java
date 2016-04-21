@@ -3,9 +3,10 @@ package model;
 public class User {
 	private int userId;
 	private String username;
+	private String password;
 	private String firstName;
 	private String lastName;
-	private int roleId;
+	private String roleType;
 	private int userInterest;
 	private String city;
 	private String state;
@@ -25,6 +26,13 @@ public class User {
 	public void setUsername(String username) {
 		this.username = username;
 	}
+	public String getPassword() {
+		return password;
+	}
+	
+	public void setPassword() {
+		this.password = password;
+	} 
 	public String getFirstName() {
 		return firstName;
 	}
@@ -37,11 +45,11 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public int getRoleId() {
-		return roleId;
+	public String getRoleType() {
+		return roleType;
 	}
-	public void setRoleId(int roleId) {
-		this.roleId = roleId;
+	public void setRoleId(String roleType) {
+		this.roleType = roleType;
 	}
 	public int getUserInterest() {
 		return userInterest;

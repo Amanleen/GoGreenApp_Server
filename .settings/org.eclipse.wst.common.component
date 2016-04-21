@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
     <wb-module deploy-name="GoGreenApp_Server">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="java-output-path" value="/GoGreenApp_Server/build/classes"/>
         <property name="context-root" value="GoGreenApp_Server"/>
+=======
+    <wb-module deploy-name="GoGreen_Server">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="GoGreen_Server"/>
+        <property name="java-output-path" value="/GoGreen_Server/build/classes"/>
+>>>>>>> 0b453610f137da3179a16876564376445c79c954
     </wb-module>
 </project-modules>

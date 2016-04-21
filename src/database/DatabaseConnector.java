@@ -21,6 +21,7 @@ public class DatabaseConnector {
 	{  
 		FileInputStream in = new FileInputStream(Configfile);
 		configProps.load(in);
+		String drivers = configProps.getProperty("JDBC_DRIVER");
 		Class.forName("com.mysql.jdbc.Driver");
 		return DriverManager.getConnection("jdbc:mysql://localhost/",ROOT_USERNAME,ROOT_PASSWORD);
 	}
