@@ -23,15 +23,11 @@ public class DoubleMeServlet extends HttpServlet {
     }
  
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
- 
         response.getOutputStream().println("Hurray !! This Servlet Works");
- 
     }
  
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
- 
         try {
-        
             int length = request.getContentLength();
             byte[] input = new byte[length];
             ServletInputStream sin = request.getInputStream();
@@ -40,7 +36,7 @@ public class DoubleMeServlet extends HttpServlet {
                 count +=c;
             }
             sin.close();
- 
+            
             String recievedString = new String(input);
             response.setStatus(HttpServletResponse.SC_OK);
             OutputStreamWriter writer = new OutputStreamWriter(response.getOutputStream());
@@ -50,12 +46,7 @@ public class DoubleMeServlet extends HttpServlet {
             writer.write(doubledValue.toString());
             writer.flush();
             writer.close();
- 
- 
- 
         } catch (IOException e) {
- 
- 
             try{
                 response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
                 response.getWriter().print(e.getMessage());
@@ -63,5 +54,5 @@ public class DoubleMeServlet extends HttpServlet {
             } catch (IOException ioe) {
             }
         }   
-        }
+    }
 }
