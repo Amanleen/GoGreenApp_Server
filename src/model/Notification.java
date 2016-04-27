@@ -5,19 +5,6 @@ public class Notification {
 	private Event eventNote;
 	private String notificationMessage;
 	private String notificationDate;
-	private int geId;
-	private int eId;
-	
-	
-	
-	
-	public int getGreenEntryId() {
-		return geId;
-	}
-	
-	public int getEventId() {
-		return eId;
-	} 
 	
 	public GreenEntry getPostNote() {
 		return postNote;

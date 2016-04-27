@@ -1,5 +1,4 @@
 package database;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -79,10 +78,22 @@ public class DbOperationsInterestArea {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+>>>>>>> 0b453610f137da3179a16876564376445c79c954
 		return arr;
 		
 	}
 	
+<<<<<<< HEAD
+	public int UpdateInterestArea() {
+		int res = 0;
+		return res;
+	}
+	
+	public int DeleteInterestArea() {
+		int res = 0;
+		return res;
+	}
+=======
 	public int UpdateInterestArea(int id, String valLabel, String val) {
 		int res = 1;
 		Statement stmt;

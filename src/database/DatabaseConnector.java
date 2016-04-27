@@ -24,22 +24,18 @@ public class DatabaseConnector {
 		String drivers = configProps.getProperty("JDBC_DRIVER");
 		Class.forName("com.mysql.jdbc.Driver");
 		return DriverManager.getConnection("jdbc:mysql://localhost/",ROOT_USERNAME,ROOT_PASSWORD);
-		//return DriverManager.getConnection("jdbc:mysql://localhost:3306/?user=root");
 	}
 	
 	public static void createDB(Connection conn)
 					throws SQLException, IOException
 	{  
-		
 		FileInputStream in = new FileInputStream(Configfile);
 		configProps.load(in);
 		Statement stmt=conn.createStatement(); 
 		String DBName = configProps.getProperty("DB_NAME");
 		int Result=stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS "+DBName);
-		//String query = configProps.getProperty("FK_SETTING");
-		//stmt.executeUpdate(query);
 		if (Result>=0)
-		System.out.println(Result+" Database GoGreen is active on the server");
+			System.out.println(Result+" Database GoGreen is active on the server");
 	}
 	
 	public static void createTables(Connection conn, String propertyName)
@@ -57,6 +53,4 @@ public class DatabaseConnector {
 			System.out.println("DB query "+propName+" executed successfully");
 		stmt.close();
 	}
-	
-
 }

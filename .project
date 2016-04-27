@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>GoGreenApp_Server</name>
+=======
 	<name>GoGreen_Server</name>
+>>>>>>> 0b453610f137da3179a16876564376445c79c954
 	<comment></comment>
 	<projects>
 	</projects>

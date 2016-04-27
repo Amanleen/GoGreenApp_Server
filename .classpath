@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 8 [1.8.0_60]">
+=======
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 7 [1.7.0_79]">
+>>>>>>> 0b453610f137da3179a16876564376445c79c954
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
@@ -13,6 +17,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="/Users/amrata/Downloads/jersey-archive-1.12/lib/asm-3.1.jar"/>
 	<classpathentry kind="lib" path="/Users/amrata/Downloads/jersey-archive-1.12/lib/jackson-core-asl-1.9.2.jar"/>
 	<classpathentry kind="lib" path="/Users/amrata/Downloads/jersey-archive-1.12/lib/jackson-jaxrs-1.9.2.jar"/>
@@ -26,5 +32,17 @@
 	<classpathentry kind="lib" path="/Users/amrata/Downloads/jersey-archive-1.12/lib/jettison-1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/amrata/Downloads/jersey-archive-1.12/lib/jsr311-api-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/amrata/Downloads/genson-1.4.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.38-bin.jar" sourcepath="lib/mysql-connector-java-5.1.38-bin.jar">
+		<attributes>
+			<attribute name="annotationpath" value="/ServletForAndroid/lib/mysql-connector-java-5.1.38-bin.jar"/>
+		</attributes>
+	</classpathentry>
+=======
+>>>>>>> 0b453610f137da3179a16876564376445c79c954
+>>>>>>> b8b259bcd804f9ba1cbd87fc022d5e904c1f75b1
+=======
+>>>>>>> parent of a74593b... REST with Jersey
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

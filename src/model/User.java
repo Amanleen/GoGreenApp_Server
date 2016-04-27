@@ -1,7 +1,5 @@
 package model;
-import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
 public class User {
 	private int userId;
 	private String username;
@@ -16,32 +14,6 @@ public class User {
 	private int followingNum; // Should be array of users or user id
 	private String imageURL;
 	
-	 public User() {
-         	username = "";
-	        firstName = "";
-	        lastName = "";
-	        roleType = "";
-	        userInterest = 1;
-	        city = "";
-	        state = "";
-	        followersNum = 0;
-	        followingNum = 0;
-	        imageURL ="";
-	    }
-	 
-	    public User(String username, String firstName, String lastName, String roleType,int userInterest, String city, String state, String imageURL) {
-	    	this.username = username;
-	    	this.firstName = firstName;
-	    	this.lastName = lastName;
-	    	this.roleType = roleType;
-	    	this.userInterest = userInterest;
-	    	this.city = city;
-	    	this.state = state;
-	    	this.followersNum = 0;
-	    	this.followingNum = 0;
-	    	this.imageURL =imageURL;
-	    }
-	
 	public int getUserId() {
 		return userId;
 	}
@@ -54,7 +26,6 @@ public class User {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
 	public String getPassword() {
 		return password;
 	}
@@ -62,7 +33,6 @@ public class User {
 	public void setPassword() {
 		this.password = password;
 	} 
-	
 	public String getFirstName() {
 		return firstName;
 	}
